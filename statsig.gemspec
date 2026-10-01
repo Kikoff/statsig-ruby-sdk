@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = 'statsig'
-  s.version     = '2.9.4'
+  s.version     = '2.9.4.kikoff.1'
   s.summary     = 'Statsig server SDK for Ruby'
   s.description = 'Statsig server SDK for feature gates and experimentation in Ruby'
   s.authors     = ['Statsig, Inc']
@@ -28,8 +28,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'simplecov-lcov', '~> 0.7.0'
   s.add_development_dependency 'simplecov-cobertura', '~> 2.1'
   s.add_runtime_dependency 'user_agent_parser', '~> 2.18.0'
-  s.add_runtime_dependency 'http', '>= 4.4', '< 6.0'
-  s.add_runtime_dependency 'connection_pool', '~> 2.4', '>= 2.4.1'
+  s.add_runtime_dependency 'http', '>= 4.4', '< 7.0'
+  s.add_runtime_dependency 'connection_pool', '>= 2.4.1', '< 4.0'
   s.add_runtime_dependency 'ip3country', '~> 0.2.1'
   s.add_runtime_dependency 'concurrent-ruby', '~> 1.1'
   s.add_runtime_dependency 'zlib', '>= 3.1', '< 4.0'

@@ -551,7 +551,7 @@ module Statsig
         success = e.nil? && !res.nil?
         tracker.end(statusCode: code, success: success)
         return nil unless success
-        content_length = Integer(res['content-length'])
+        content_length = Integer(res.headers['content-length'])
         return nil if content_length.nil? || content_length <= 0
         content = res.body.to_s
         success = process_single_id_list(list, context, content, content_length)

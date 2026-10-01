@@ -73,7 +73,7 @@ class TestStatsig < BaseTest
   def test_version
     spec = Gem::Specification::load("#{__dir__}/../statsig.gemspec")
     metadata = Statsig.get_statsig_metadata
-    assert_equal(spec.version.to_s, metadata["sdkVersion"])
+    assert_equal(spec.version.release.to_s, metadata["sdkVersion"])
   end
 
   def test_list_apis
